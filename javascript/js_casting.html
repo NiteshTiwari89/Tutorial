@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Type Casting</title>
+    <link rel="stylesheet" href="js_style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>TypeCasting in JavaScript</h2><br>
+                <hr><br>
+                <p>Type casting means conversion of one data type to another explicitly. In JavaScript some of the most
+                    common methods to convert a datatype to either string using String(), to boolean using Boolean(), or
+                    to number using Number().</p><br>
+                <p>Following is the code for type casting in JavaScript −</p><br>
+                <div id="example">
+                    <div id="example_code">
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+&lt;html lang=&quot;en&quot;&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset=&quot;UTF-8&quot; /&gt;<br>
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;<br>
+&lt;title&gt;Document&lt;/title&gt;<br>
+&lt;style&gt;<br>
+   body { <br> <br>
+      font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif; <br>
+   }<br>
+   .result,.sample {<br>
+      font-size: 20px;<br>
+      font-weight: 500;<br>
+   }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Type casting in JavaScript.&lt;/h1&gt;<br>
+&lt;div class=&quot;sample&quot;&gt;44&lt;/div&gt;<br>
+&lt;div style=&quot;color: green;&quot; class=&quot;result&quot;&gt;&lt;/div&gt;<br>
+&lt;button class=&quot;Btn&quot;&gt;CLICK HERE&lt;/button&gt;<br>
+&lt;h3&gt;Click on the above button to convert it into string,number and boolean.&lt;/h3&gt;<br>
+&lt;script&gt;<br>
+   let sampleEle = document.querySelector('.sample');<br>
+   let resEle = document.querySelector(&quot;.result&quot;);<br>
+   document.querySelector(&quot;.Btn&quot;).addEventListener(&quot;click&quot;, () =&gt; {<br>
+      resEle.innerHTML += 'String = '+ (String(sampleEle.innerHTML)+22) + '&lt;br&gt;';<br>
+      resEle.innerHTML += 'Number = ' + (Number(sampleEle.innerHTML)+22) + '&lt;br&gt;';<br>
+      resEle.innerHTML += 'Boolean = ' + Boolean(sampleEle.innerHTML) + '&lt;br&gt;';<br>
+   });<br>
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+                        </code>
+                    </div>
+                </div><br>
+                <p><b>Output:</b></p><br>
+                <div id="example">
+                    <div id="example_code">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                            <title>Document</title>
+                            <style>
+                                body {
+                                    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                                }
+
+                                .result,
+                                .sample {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                }
+                            </style>
+                        </head>
+
+                        <body>
+                            <h1>Type casting in JavaScript.</h1>
+                            <div class="sample">44</div>
+                            <div style="color: green;" class="result"></div>
+                            <button class="Btn">CLICK HERE</button>
+                            <h3>Click on the above button to convert it into string,number and boolean.</h3>
+                            <script>
+                                let sampleEle = document.querySelector('.sample');
+                                let resEle = document.querySelector(".result");
+                                document.querySelector(".Btn").addEventListener("click", () => {
+                                    resEle.innerHTML += 'String = ' + (String(sampleEle.innerHTML) + 22) + '<br>';
+                                    resEle.innerHTML += 'Number = ' + (Number(sampleEle.innerHTML) + 22) + '<br>';
+                                    resEle.innerHTML += 'Boolean = ' + Boolean(sampleEle.innerHTML) + '<br>';
+                                });
+                            </script>
+                        </body>
+
+                        </html>
+                    </div>
+                </div><br>
+                <p>If You Click the button 'Click Here' it show the output of TypeCasting</p>
+                <br><br>
+                <p>There are two types of type conversions (or) typecasting:</p><br>
+                <ul style="margin-left: 20px;">
+                    <li>Implicit Type Casting</li>
+                    <li>Explicit Type Casting</li>
+                </ul>
+            </div>
+            <div id="button">
+                <div id="click"><a href="js_typeof.html"><--Back< /a></div>
+                <div id="click"><a href=".html">Next--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
