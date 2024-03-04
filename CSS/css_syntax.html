@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax</title>
+    <link rel="stylesheet" href="stylenew.css">
+</head>
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2 style="text-align: center;">CSS Syntax</h2><br><hr><br><hr><br>
+                <p>A CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding elements in your document. A style rule is made of three parts -</p>
+                <br>
+                <ul style="margin-left: 20px;">
+                    <li><p><b>Selector</b> − A selector is an HTML tag at which a style will be applied. This could be any tag like &lt;h1&gt; or &lt;table&gt; etc.</p></li>
+                    <li><p><b>Property</b> − A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are converted into CSS properties. They could be <i>color</i>, <i>border</i> etc.</p></li>
+                    <li><p><b>Value</b> − Values are assigned to properties. For example, <i>color</i> property can have value either <i>red</i> or <i>#F1F1F1</i> etc.</p></li>
+                </ul><br>
+                <p>You can put CSS Style Rule Syntax as follows −</p><br>
+                <pre>selector { property: value }
+                </pre><br><hr><br>
+                <h2>The Type Selector</h2><br><hr><br><hr><br>
+                <p>This is the same selector we have seen above. Again, one more example to give a color to all level 1 headings −</p>
+                <pre ><span class="pln">h1 </span><span class="pun">{</span><span class="pln">
+    color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#36CFFF; </span><span class="pln">
+    </span><span class="pun">}</span></pre>
+    <br><hr><br>
+    <h2>The Universal Selector </h2><br><hr><br><hr><br>
+    <p>Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type −</p>
+    <pre class="prettyprint notranslate prettyprinted" style=""><span class="pun">*</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> 
+        color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#000000; </span><span class="pln">
+     </span><span class="pun">}</span></pre>
+            </div>
+            
+            <div id="button">
+                <div id="click"><a href="css_intro.html"><--BACK</a></div>
+                <div id="click"><a href="css_measure_unit.html">NEXT--></a></div>
+        </div>
+    </div>
+</body>
+</html>

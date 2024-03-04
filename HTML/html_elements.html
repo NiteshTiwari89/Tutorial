@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+    <link rel="stylesheet" href="style/html_elements.css">
+</head>
+<body>
+    <div id="container">
+        <div id="container1">
+            <div id="para">
+                <u><h2>HTML Elements</h2></u><br><br>
+                <p>An HTML element is defined by a start tag, some content, and an end tag.</p><br>
+                <p>The HTML element is everything from the start tag to the end tag:</p><br>
+                <xmp><tagname>Content goes here...</tagname></xmp><br><br>
+                <p>Examples of some HTML elements:</p><br><br>
+                <xmp><h1>My First Heading</h1></xmp><br><br>
+                <xmp><p>My first paragraph.</p></xmp><br><br>
+
+                <table>
+                    <tr>
+                        <th>Start Tag</th>
+                        <th>Elements Content</th>
+                        <th>End Tag</th>
+                    </tr>
+                    <tr>
+                        <td><xmp><h1></xmp></td>
+                        <td>My First Heading</td>
+                        <td><xmp></h1></xmp></td>
+                    </tr>
+                    <tr>
+                        <td><xmp><p></xmp></td>
+                        <td>My First Paragraph</td>
+                        <td><xmp></p></xmp></td>
+                    </tr>
+                    <tr>
+                        <td><xmp><br></xmp></td>
+                        <td>none</td>
+                        <td>none</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <hr>
+            <div id="para">
+                <u><h2>Nested HTML Elements</h2></u>
+                <p>HTML elements can be nested (this means that elements can contain other elements).</p><br> <br>
+                <p>All HTML documents consist of nested HTML elements.</p><br><br>
+                <p>The following example contains four HTML elements <xmp>(<html>, <body>, <h1> and <p>):</xmp></p><br><br>
+                <div id="example">
+                    <div id="example_head">Example</div><br>
+                    <div id="example_code"><xmp><!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+                        
+</body>
+</html></xmp></div><br>
+                    <div id="example_run">Try It Yourself--></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="para">
+            <u><h2>Example Explained</h2></u><br><br>
+            <p>The < html> element is the root element and it defines the whole HTML document.</p><br>
+            <p>It has a start tag < html> and an end tag < /html>.</p><br><br>
+            <p>Then, inside the < html> element there is a < body> element:</p><br>
+            <div id="example">
+                <div id="example_code"><xmp><body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+                    
+</body></xmp></div>
+            </div><br><br>
+            <p>The < body> element defines the document's body.</p><br><br> 
+            <p>It has a start tag < body> and an end tag < /body>.</p><br><br>
+            <p>Then, inside the < body> element there are two other elements: < h1> and < p>:</p><br><br>
+            <div id="example">
+                <div id="example_code"><xmp><h1>My First Heading</h1>
+<p>My first paragraph.</p></xmp></div>
+            </div><br><br>
+            <p>The < h1> element defines a heading.</p><br><br>
+            <p>It has a start tag < h1> and an end tag < /h1>:</p><br><br>
+            <div id="example">
+                <div id="example_code"><xmp><h1>My First Heading</h1></xmp></div>
+            </div><br><br>
+            <p>The < p> element defines a paragraph.</p><br><br>
+            <p>It has a start tag < p> and an end tag < /p>:</p><br>
+            <div id="example">
+                <div id="example_code"><xmp><p>My first paragraph.</p></xmp></div>
+            </div><br><br>
+        </div>
+        <div id="button">
+            <div id="click"><a href="html_basic.html"><--BACK</a></div>
+            <div id="click"><a href="html_attributes.html">NEXT--></a></div>
+        </div>
+    </div>
+</body>
+</html>

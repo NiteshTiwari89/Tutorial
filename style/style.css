@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(231, 246, 255); */
+    /* background-color: #F6B17A; */
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#container {
+    /* background-color: #F6B17A; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: linear-gradient(#f4cf5c 0.8px, transparent 0.8px), linear-gradient(to right, #f4cf5c 0.8px, #e5e5f7 0.8px);
+    background-size: 16px 16px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.sub_box {
+    border: 2px solid;
+    /* background-color: #f9eba4; */
+    height: 200px;
+    width: 20%;
+    /* border-radius: 10px; */
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 42px;
+    background: linear-gradient(315deg, #ffd64a, #deb43e);
+    box-shadow: 12px 12px 24px #dcb23d,
+        24px 24px 48px #ffde4d;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: beige;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+
+}
+
+#head {
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid;
+}
+
+#hline {
+    text-align: center;
+    display: flex;
+    width: 95%;
+    margin-top: 29px;
+}
+
+#img {
+    width: 6%;
+}
+
+img {
+    margin: 20px;
+    border-radius: 100%;
+    background: linear-gradient(315deg, #ffd64a, #deb43e);
+    box-shadow: 6px 6px 12px #dcb23d,
+        6px 6px 12px #ffde4d;
+}
+
+#button {
+    /* background-color: #7fb0fb; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 1px solid;
+    border-radius: 10px;
+    padding: 10px; */
+}
+
+#back {
+    background-color: #f9eba4;
+    border: 1px solid;
+    display: flex;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+}

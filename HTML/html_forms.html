@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style/stylenew.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>HTML Forms</h2><br>
+                <hr><br>
+                <p>An HTML form is used to collect user input. The user input is most often sent to a server for
+                    processing.</p><br>
+                <div id="example">
+                    <h3>Example</h3><br>
+                    <div id="example_code">
+                        <form action="">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value=""><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value=""><br><br>
+                            <input type="submit" value="Submit"><br>
+                        </form>
+                    </div><br>
+                    <div id="example_run">
+                        <a class="w3-btn" href="tryit.asp?filename=tryhtml_files_relative_2" target="_blank">Try it
+                            Yourself »</a>
+                    </div>
+                </div> <br>
+                <hr>
+            </div>
+            <div id="para">
+                <h2>The < form> Element</h2><br>
+                <p>The HTML < form> element is used to create an HTML form for user input:</p><br>
+                <div id="example">
+                    <div id="example_code">
+                        <div><br>
+                            <span style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>form<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br>
+                            .<br>
+                            <i>form elements</i><br>
+                            .<br>
+                            <span style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br>
+                            <br>
+                        </div>
+                    </div>
+                </div><br>
+                <p>The < form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p><br><br>
+            <hr></div>
+            <div id="para">
+                <h2>The < input> Element</h2><br>
+                <p>The HTML < input> element is the most used form element. <br><br>An < input> element can be displayed in many ways, depending on the type attribute</p><br><br>
+                <p>Here are some examples:</p><br><br>
+                <table>
+                    <tbody><tr>
+                     <th>Type</th>
+                     <th>Description</th>
+                    </tr>
+                    <tr>
+                     <td>&lt;input type="text"&gt;</td>
+                     <td>Displays a single-line text input field</td>
+                    </tr>
+                    <tr>
+                     <td>&lt;input type="radio"&gt;</td>
+                     <td>Displays a radio button (for selecting one of many choices)</td>
+                    </tr>
+                    <tr>
+                     <td>&lt;input type="checkbox"&gt;</td>
+                     <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                    </tr>
+                    <tr>
+                     <td>&lt;input type="submit"&gt;</td>
+                     <td>Displays a submit button (for submitting the form)</td>
+                    </tr>
+                    <tr>
+                     <td>&lt;input type="button"&gt;</td>
+                     <td>Displays a clickable button</td>
+                    </tr>
+                    </tbody>
+                </table><br><br><hr>
+            </div>
+            <div id="para">
+                <h2>Text Field</h2><br>
+                <p>The <code>&lt;input type="text"&gt;</code> defines a single-line input field for text input.</p><br><br>
+                <div id="example">
+                    <h3>Example</h3><br>
+                    <p>A form with input fields for text:</p><br>
+                    <div id="example_code">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                         &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> 
+                         type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last 
+                         name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                        </div><br>
+                    <div id="example_run">
+                        <a href="" target="_blank">Try it
+                            Yourself »</a>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <div id="button">
+                <div id="click"><a href="html_responsive.html"><--BACK</a></div>
+                <div id="click"><a href="html_fattribute.html">NEXT--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

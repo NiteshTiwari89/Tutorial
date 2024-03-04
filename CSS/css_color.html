@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color</title>
+    <link rel="stylesheet" href="stylenew.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>CSS - Color</h2>
+                <br>
+                <hr><br>
+                <hr><br>
+                <p>CSS uses color values to specify a color. Typically, these are used to set a color either for the
+                    foreground of an element (i.e. its text) or else for the background of the element. They can also be
+                    used to affect the color of borders and other decorative effects.</p><br>
+                <p>You can specify your color values in various formats. Following table lists all the possible formats
+                    −</p><br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th style="text-align:left;">Format</th>
+                            <th style="text-align:left;">Syntax</th>
+                            <th style="text-align:left;">Description</th>
+                            <th style="text-align:left;">Example</th>
+                        </tr>
+                        <tr>
+                            <td>Keyword</td>
+                            <td>&lt;property&gt;: &lt;colorname&gt;</td>
+                            <td>CSS has a set of predefined color names that you can use directly.</td>
+                            <td>red, blue, green, yellow, black, white, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>Hexadecimal Code</td>
+                            <td>#RRGGBB</td>
+                            <td>Starts with a hash (#) followed by six hexadecimal digits.</td>
+                            <td>#FF0000 - red</td>
+                        </tr>
+                        <tr>
+                            <td>Short Hexadecimal Code</td>
+                            <td>#RGB</td>
+                            <td>Shorter version of hexadecimal format where each of the RGB components is represented by
+                                a single digit, and the value is duplicated.</td>
+                            <td>#F00 - red</td>
+                        </tr>
+                        <tr>
+                            <td>RGB</td>
+                            <td>rgb(red,green,blue)</td>
+                            <td>Colors can be defined using the rgb() function, which takes three parameters
+                                representing the red, green, and blue values.</td>
+                            <td>rgb(0, 0, 255) - blue</td>
+                        </tr>
+                        <tr>
+                            <td>RGBA</td>
+                            <td>rgba()</td>
+                            <td>Similar to RGB, with an additional parameter for the alpha (transparency) value. 0
+                                (fully transparent) and 1 (fully opaque)</td>
+                            <td>rgba(0,0,255,0.5) - translucent blue</td>
+                        </tr>
+                        <tr>
+                            <td>HSL</td>
+                            <td>hsl()</td>
+                            <td>Colors can be defined using the rgb() function which stands for Hue (0 to 360 degree),
+                                Saturation (%), and Lightness (%).</td>
+                            <td>hsl(120, 100%, 50%) - pure green</td>
+                        </tr>
+                        <tr>
+                            <td>HSLA</td>
+                            <td>hsla()</td>
+                            <td>Similar to HSL, with an additional parameter for the alpha (transparency) value.</td>
+                            <td>hsl(120, 100%, 50%, 0.5) - translucent green</td>
+                        </tr>
+                        <tr>
+                            <td>currentcolor Keyword</td>
+                            <td>currentcolor</td>
+                            <td>It refers to the value of the color property of the element.</td>
+                            <td>color: red; /* Red text color */
+                                border: 10px solid currentcolor; /* Red border color */</td>
+                        </tr>
+                        <tr>
+                            <td>System color</td>
+                            <td>as per OS or browser</td>
+                            <td>CSS allows usage of system colors defined by the user's OS or browser.</td>
+                            <td>ButtonText, Window, WindowText</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <hr>
+
+            </div>
+            <div id="button">
+                <div id="click"><a href="css_measure_unit.html"><--BACK</a></div>
+                <div id="click"><a href="css_background.html">NEXT--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+    background-color: beige;
+}
+#card{
+    display:inline-table;
+
+}
+#heading{
+    background-color: lightblue;
+    text-align: center;
+    height:40px;
+    margin:0%;
+    border-bottom: 2px solid ;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#dash{
+    width:15%;
+    height: 150px;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 2%; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float:inline-start;   
+    color: black;
+    box-shadow: 15px 15px 41px rgba(221, 221, 162, 0.752);
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+a,#dash:hover{
+    color:burlywood;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-out;
+}
+#dash:hover{
+    background-color: rgba(68, 173, 151, 0.649); 
+    color:grey;  
+}
+#back{
+    color:black;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+#fotter{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="stylenew.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>CSS Specificity</h2><br>
+                <hr><br>
+                <hr><br>
+                <p>Specificity in CSS is a calculation or algorithm that is understood and used by the browser to
+                    determine the CSS declaration that needs to be applied on an element. It chooses the selector with
+                    the highest specificity value and applies the styling accordingly on any HTML element. For instance,
+                    if two or more CSS rules are specified on an HTML element, the selector with highest specificity
+                    value, will be eventually applied on that element.
+                </p><br>
+                <h3>CSS Specificity - Score Of Each Selector Type</h3><br>
+                <p>Following list shows the score earned by each selector and based on these scores, you can calculate a selector's overall specificity.</p><br>
+                <ul style="margin-left: 20px;">
+                    <li><p><b>No value</b>: <b>Universal selector (*), :where() pseudo-class, combinators (+, &gt;, ~, _, ||), nesting combinator (&amp;)</b> has <b>no</b> specificity and scores <b>0 point</b>.</p></li>
+                    <li><p><b>Element / Pseudo-element selector</b>: It gets <b>1 point</b> of specificity.</p></li>
+                    <li><p><b>Class, pseudo-class, or attribute selector</b>: It gets <b>10 points</b> of specificity.</p></li>
+                    <li><p><b>Id selector</b>: It gets <b>100 points</b> of specificity.</p></li>
+                    <li><p><b>Inline style attribute</b>: It gets <b>1000 points</b> of specificity.</p></li>
+                    <li><p><b>!important rule</b>: The rule gets <b>10000 points</b> of specificity. If an <b>!important</b> rule is applied to any CSS property,it takes the precedence over all other properties.</p></li>
+                </ul>
+                <br>
+                <h3>CSS Specificity - Handling Issues</h3><br>
+                <p>Following are some tips and tricks to handle the specificity issues in your code:</p><br>
+                <ul style="margin-left: 20px;">
+                    <li><p>Use of cascade layers and low weight specificity, instead of <b>!important</a></b>, so that the styles can be easily overwritten.</p></li>
+                    <li><p>Selectors can be made more specific with or without adding specificity.</p></li>
+                    <li><p>By reducing the ID specificity, where the id of an element can be used as an attribute selector rather than an id selector, makes an element more specific without adding extra specificity.</p></li>
+                    <li><p>By duplicating id, class, pseudo-class or attribute selectors inside a compound selector, increases specificity along with easy control over the particular section.</p></li>
+                    <li><p>Enabling one set of styles to take precedence over other set is by using cascade layers. For example, when two selectors from different layers match the same element, the origin and importance take precedence. The specificity of that selector in the losing stylesheet becomes irrelevant.</p></li>
+                 </ul><br>
+                 <h3>CSS Specificity - Point to Remember</h3><br>
+                 <p>Following are some important points to remember in regard to specificity:</p><br>
+                 <ul style="margin-left: 20px;">
+                    <li><p>Specificity is applicable only when the same element is targeted by multiple declarations in the same origin or cascade layer. In case matching selectors are in different origins, the cascade decides which declaration takes precedence.</p></li>
+                    <li><p>Scoping proximity is calculated, when two selectors are in the same cascade layer and origin have the same specificity. In such a case the ruleset with the lowest scoping proximity takes precedence.</p></li>
+                    <li><p>Source order comes into picture, when the scope proximity is also same for both selectors. When everything is equal, the last selector wins.</p></li>
+                    <li><p>Regardless of the specificity of the inherited rule, the styles of a directly targeted element will always take precedence over the inherited styles.</p></li>
+                    <li><p>In the document tree, proximity of elements, has no effect on the specificity.</p></li>
+                 </ul>
+                 <br>
+            </div>
+            <div id="button">
+                <div id="click"><a href="css_layout.html"><--BACK</a></div>
+                <div id="click"><a href="css_navbar.html">NEXT--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

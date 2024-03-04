@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Hoisting</title>
+    <link rel="stylesheet" href="js_style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>Java Hoisting</h2><br>
+                <hr><br>
+                <p>
+                    Hoisting is a concept that enables us to extract values of variables and functions even before
+                    initializing/assigning value without getting errors and this happens during the 1st phase (memory
+                    creation phase) of the Execution Context. <br>
+                    <br>
+                    <b>Features of Hoisting:</b><br>
+                <ul style="margin-left: 20px;">
+                    <li>In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the
+                        scope before code execution. Basically, it gives us an advantage that no matter where functions
+                        and variables are declared, they are moved to the top of their scope regardless of whether their
+                        scope is global or local.
+                    </li>
+                    <li>It allows us to call functions before even writing them in our code. 
+                    </li>
+                </ul>
+                <br>
+                <b>Sequence of variable declaration: </b> The following is the sequence in which variable declaration and initialization occur. <br><br>
+                <div id="example"><p style="text-align: center"><b><strong>Declaration –&gt; Initialisation/Assignment –&gt; Usage</strong></b><span>&nbsp;</span></p></div>
+                <br><b>For example: <br><br>By using var :</b><br><br>
+                <div id="example">
+                    <div id="example_code">
+                        console.log(a); <br>
+                        hey(); <br>
+                        function hey() { <br>
+                        var name = 'Someone'; <br>
+                        console.log(name);<br>
+                        } <br>
+                        var a = 10;
+                    </div>
+                </div>
+                <br>
+                <b>OUTPUT:</b><br>
+                <img src="image/js_op.png" width="40%" alt="js_op">
+                <br>
+                <b>Exaplaination:</b><br>
+                <ol style="margin-left: 20px;">
+                    <li> In  JS program the console want to print the value of 'a' but it show output as undefined because the 'a' is defined after the console command that's why it only show the value as undefined. </li>
+                    <br>
+                    <li> If we do not declare the 'a' as variable it show the error in code.</li><br>
+                    <li>If we declare the 'a' as before the console command. It show the output as '10'.</li>
+                </ol>
+                </p>
+            </div>
+            <div id="button">
+                <div id="click"><a href="js_variable.html"><--Back</a></div>
+                <div id="click"><a href="js_var_scope.html">Next--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- the first line of -->

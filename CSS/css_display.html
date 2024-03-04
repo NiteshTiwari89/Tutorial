@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <link rel="stylesheet" href="stylenew.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>CSS Display</h2><br>
+                <hr><br>
+                <hr><br>
+                <p>The display property in CSS is used to specify how an element should be displayed on the webpage. It
+                    controls the
+                    layout and visibility of an element.</p><br>
+                <p>The display property is useful in setting the inner and outer display types of an element.</p><br>
+                <h3>Possible Values</h3><br>
+                <p>The value passed to the display property is a keyword. These keyword values are categorised in six
+                    different
+                    groups, which are as follows:</p><br>
+                <ul style="margin-left: 20px;">
+                    <li>
+                        <p><b>Outside Values (&lt;display-outside&gt;)</b>: Values under this head specify the outer
+                            display type of
+                            an element.
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li>
+                                <p><b>inline</b>: Makes the element behave like an inline element, allowing other
+                                    elements to appear
+                                    beside it on the same line. Examples: &lt;span&gt;, &lt;img&gt;, &lt;a&gt;, etc.</p>
+                            </li>
+                            <li>
+                                <p><b>block</b>: Makes the element behave like a block-level element, taking up the
+                                    entire width of
+                                    its parent container and creating a new line before and after it. Examples:
+                                    &lt;div&gt;,
+                                    &lt;form&gt;, &lt;p&gt;, etc. </p>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p><b>Inside Values (&lt;display-inside&gt;)</b>: Values under this head specify the inner
+                            display type of
+                            an element.
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li>
+                                <p><b>flow</b>: Element displays its contents using flow layout (block and inline
+                                    layout)</p>
+                            </li>
+                            <li>
+                                <p><b>flow-root</b>: Element displays a block box, referring to its formatting roots.
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>table</b>: Defines a block-level box, behaving like a HTML &lt;table&gt; elements.
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>flex</b>: Defines a block-level box, behaves as per the flexbox model.</p>
+                            </li>
+                            <li>
+                                <p><b>grid</b>: Defines a block-level box, behaves as per the grid model.</p>
+                            </li>
+                            <li>
+                                <p><b>ruby</b>: Defines an inline-level element and behaves as per ruby formatting
+                                    model.</p>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p><b>List Item Values (&lt;display-listitem&gt;)</b>: Makes the element behave like a list item
+                            marker,
+                            typically used with &lt;li&gt; elements.
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li>
+                                <p>A single value represents a single list-item.</p>
+                            </li>
+                            <li>
+                                <p>Can be used along with <b>list-style-type</b> and <b>list-style-position</b>.</p>
+                            </li>
+                            <li>
+                                <p>The <b>list-item</b> can be paired with any outside display value and the <b>flow</b>
+                                    or
+                                    <b>flow-root</b> inside display values.
+                                </p>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p><b>Internal Values (&lt;display-internal&gt;)</b>: Layouts with complex internal structure,
+                            such as,
+                            <b>table</b> and <b>ruby</b> use this property to display their content.
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li>
+                                <p><b>table-row-group</b>: Behaves like <b>&lt;tbody&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>table-header-group</b>: Behaves like <b>&lt;thead&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>table-footer-group</b>: Behaves like <b>&lt;tfoot&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>table-row</b>: Behaves like <b>&lt;tr&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>table-cell</b>: Behaves like <b>&lt;td&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>table-column-group</b>: Behaves like <b>&lt;colgroup&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>table-column</b>: Behaves like <b>&lt;col&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>table-caption</b>: Behaves like <b>&lt;caption&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>ruby-base</b>: Behaves like <b>&lt;rb&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>ruby-text</b>: Behaves like <b>&lt;rt&gt;</b> HTML element.</p>
+                            </li>
+                            <li>
+                                <p><b>ruby-base-container</b>: Generated as anonymous boxes.</p>
+                            </li>
+                            <li>
+                                <p><b>ruby-text-container</b>: Behaves like <b>&lt;rtc&gt;</b> HTML element.</p>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p><b>Box Values (&lt;display-box&gt;)</b>: Defines whether a display box is generated by an
+                            element or not.
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li>
+                                <p><b>contents</b>: Display of the element is replaced by its contents, i.e. its
+                                    children and
+                                    pseudo-elements.</p>
+                            </li>
+                            <li>
+                                <p><b>none</b>: Turns off the display of the element and its descendants.</p>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p><b>Precomposed Values (&lt;display-legacy&gt;)</b>: A single-keyword value that is
+                            precomposed. Requires
+                            separate keyword for block and inline level elements.
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li>
+                                <p><b>inline-block</b>: Makes an element display as an inline-level block container.
+                                    Same as
+                                    <b>inline flow-root</b>.
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>inline-table</b>: Specifies that an element should behave like a table, but still
+                                    be inline
+                                    within a block-level context. Same as <b>inline table</b>.</p>
+                            </li>
+                            <li>
+                                <p><b>inline-flex</b>: Allows an element to have a flexible box layout while
+                                    participating in an
+                                    inline-level context. Same as <b>inline flex</b>.</p>
+                            </li>
+                            <li>
+                                <p><b>inline-grid</b>: Specifies that a grid container should be treated as an
+                                    inline-level element.
+                                    Same as <b>inline grid</b>.</p>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+            <div id="button">
+                <div id="click"><a href="css_table.html"><--BACK</a></div>
+                <div id="click"><a href="css_position.html">NEXT--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

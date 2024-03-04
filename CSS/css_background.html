@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background</title>
+    <link rel="stylesheet" href="stylenew.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>CSS - Background</h2><br>
+                <hr><br>
+                <hr><br>
+                <p>The <b>background</b> property of CSS is used to set the background of an element. It can be used to
+                    apply a single background image or multiple background images, as well as defining the background
+                    color, size, position, repeat behavior, and other related properties.</p><br>
+                <p>It is a versatile tool for styling the appearance of elements and adding visual interest to web
+                    pages.</p><br>
+                <p>The <b>background</b> is a shorthand for the following properties:</p><br>
+                <ul style="margin-left: 20px;">
+                    <li>
+                        <p><a href="css_background-attachment.htm" target="_blank">background-attachment</a>: Specifies
+                            the position of the background relative to the viewport, either fixed or scrollable.</p>
+                    </li>
+                    <li>
+                        <p><a href="css_background-clip.htm" target="_blank">background-clip</a>: Controls how far a
+                            background image extends beyond the element's padding or content box.</p>
+                    </li>
+                    <li>
+                        <p><a href="css_background-color.htm" target="_blank">background-color</a>: Sets the background
+                            color of an element.</p>
+                    </li>
+                    <li>
+                        <p><a href="css_background-image.htm" target="_blank">background-image</a>: Sets one or more
+                            background image(s) on an element.</p>
+                    </li>
+                    <li>
+                        <p><a href="css_background-origin.htm" target="_blank">background-origin</a>: Sets the origin of
+                            the background.</p>
+                    </li>
+                    <li>
+                        <p><a href="css_background-position.htm" target="_blank">background-position</a>: Sets the
+                            initial position of each image in a background.</p>
+                    </li>
+                    <li>
+                        <p><a href="css_background-repeat.htm" target="_blank">background-repeat</a>: Controls the
+                            repetition of an image in the background.</p>
+                    </li>
+                    <li>
+                        <p><a href="css_background-size.htm" target="_blank">background-size</a>: Controls the size of
+                            the background image.</p>
+                    </li>
+                </ul>
+
+                <br>
+                <h3>Overview</h3><br>
+                <ul style="margin-left: 20px;">
+                    <li>
+                        <p>The <b>background</b> property allows to set one or multiple layers of background, separated
+                            by commas.</p>
+                    </li>
+                    <li>
+                        <p>Each layer in the background may have zero or atleast one occurrence of the following values:
+                        </p>
+                        <ul style="margin-left: 20px;">
+                            <li>
+                                <p><b>&lt;attachment&gt;</b></p>
+                            </li>
+                            <li>
+                                <p><b>&lt;bg-image&gt;</b></p>
+                            </li>
+                            <li>
+                                <p><b>&lt;position&gt;</b></p>
+                            </li>
+                            <li>
+                                <p><b>&lt;bg-size&gt;</b></p>
+                            </li>
+                            <li>
+                                <p><b>&lt;repeat-style&gt;</b></p>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>If <b>&lt;bg-size&gt;</b>is to be added, it must be included immediately after <a
+                                href="css_dt_postion.htm" target="_blank">&lt;position&gt;</a>, separated with '/'. For
+                            example: "left/50%".</p>
+                    </li>
+                    <li>
+                        <p>Value of <b>&lt;box&gt;</b> can be included zero, one or two times. Based on the number of
+                            occurrences, following values are set:</p>
+                        <ul style="margin-left: 20px;">
+                            <li>
+                                <p><b>once</b> - sets the values for both <b>background-origin</b> and
+                                    <b>background-clip</b>.</p>
+                            </li>
+                            <li>
+                                <p><b>twice</b> - first sets the value of <b>background-origin</b> and second sets the
+                                    value of <b>background-clip</b>.</p>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>The value of <a href="css_background-color.htm" target="_blank">background-color</a> may be
+                            included in the last layer specified as background.</p>
+                    </li>
+                </ul>
+                <br><hr>
+            </div>
+            <div id="button">
+                <div id="click"><a href="css_measure_unit.html"><--BACK</a></div>
+                <div id="click"><a href="css_font.html">NEXT--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

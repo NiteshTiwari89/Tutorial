@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(231, 246, 255); */
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#container {
+
+    background-color: #e5e5f7;
+    /* background-color: #e5e5f7; */
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: linear-gradient(#d6f745 0.8px, transparent 0.8px), linear-gradient(to right, #d6f745 0.8px, #e5e5f7 0.8px);
+    background-size: 16px 16px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#box1,
+#box2,
+#box3,
+#box4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.sub_box {
+    border: 2px solid;
+    /* background-color: #dcf36a; */
+    height: 200px;
+    width: 20%;
+    /* border-radius: 10px; */
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 15px 10px 5px #bdac4e; */
+    border-radius: 36px;
+    background: linear-gradient(315deg, #e5ff4a, #c1de3e);
+    box-shadow: 24px 24px 48px #a9c337,
+        24px 24px 48px #ffff53;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: beige;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+
+}
+
+#head {
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid;
+}
+
+#hline {
+    text-align: center;
+    display: flex;
+    width: 95%;
+    margin-top: 22px;
+}
+
+#img {
+    width: 6%;
+}
+
+img {
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    background: linear-gradient(315deg, #e5ff4a, #c1de3e);
+    box-shadow: 6px 6px 12px #a9c337,
+        6px 6px 12px #ffff53;
+}
+
+#button {
+    /* background-color: #7fb0fb; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 1px solid;
+    border-radius: 10px;
+    padding: 10px; */
+}
+
+#back {
+    background-color: #dcf36a;
+    border: 1px solid;
+    display: flex;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+}

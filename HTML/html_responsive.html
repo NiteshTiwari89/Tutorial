@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Responsive</title>
+    <link rel="stylesheet" href="style/stylenew.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h1>HTML <span>Responsive Web Design</span></h1><br>
+                <p>Responsive web design is about creating web pages that look good on all devices! </p><br>
+                <p>A responsive web design will automatically adjust for different screen sizes and viewports.</p><br>
+                <hr>
+            </div>
+            <div id="para">
+                <h2>What is Responsive Web Design?</h2><br>
+                <p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge,
+                    a website, to make it look good on all devices (desktops, tablets, and phones):</p><br>
+                <div id="example_run">
+                    <a class="ws-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_responsive_page"
+                        target="_blank">Try it
+                        Yourself »</a>
+                </div><br><br>
+                <hr>
+            </div>
+            <div id="para">
+                <h2>Setting The Viewport</h2><br>
+                <p>To create a responsive website, add the following <code class="w3-codespan">&lt;meta&gt;</code>
+                    tag to all your web pages:</p><br>
+                <div id="example">
+                    <h3>Example</h3><br>
+                    <div id="example_code">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
+                                name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span>
+                                content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width,
+                                    initial-scale=1.0"</span></span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>
+                    </div><br><br>
+                    <a id="example_run" href="tryit.asp?filename=tryhtml_responsive_viewport" target="_blank">Try
+                        it Yourself »</a>
+                </div><br><br>
+
+                <p>This will set the viewport of your page, which will give the browser instructions on how
+                    to control the page's dimensions and scaling.</p><br>
+                <div>
+                    <p><strong>Tip:</strong> If you are browsing this page on a phone or a tablet, you can click on the
+                        two
+                        links above to see the difference.</p>
+                </div><br><br>
+                <hr>
+            </div>
+            <div id="para">
+                <h2>Responsive Images</h2><br>
+                <p>Responsive images are images that scale nicely to fit any browser size.</p><br>
+                <h3>Using the width Property</h3><br>
+                <p>If the CSS <code class="w3-codespan">width</code> property is set to 100%, the image will be
+                    responsive and
+                    scale
+                    up and down:</p>
+                <img src="img_girl.jpg" style="width:100%;height:auto;">
+
+                <div id="example">
+                    <h3>Example</h3><br>
+                    <div id="example_code">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
+                                src<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span>
+                                <strong>style<span class="attributevaluecolor"
+                                        style="color:mediumblue">="width:100%;"</span></strong></span><span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                    </div><br>
+                    <div id="example_run">
+                        <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_responsive_image"
+                            target="_blank">Try it
+                            Yourself »</a>
+                    </div>
+                </div><br>
+
+                <p>Notice that in the example above, the image can be scaled up to be larger than its original size.
+                    A better solution, in many cases, will be to use the <code class="w3-codespan">max-width</code>
+                    property
+                    instead.</p><br>
+                <hr>
+            </div>
+            <div id="para">
+                <h3>Using the max-width Property</h3>
+                <br>
+                <p>If the <code class="w3-codespan">max-width</code> property is set to 100%, the image will scale down
+                    if it
+                    has to, but never scale up to be larger than its original size:</p>
+                <br>
+                <img src="style/image/intro.jpg" style="max-width:100%;height:auto;">
+                <br><br>
+                <div id="example">
+                    <h3>Example</h3><br>
+                    <div id="example_code">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
+                                src<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span>
+                                style<span class="attributevaluecolor"
+                                    style="color:mediumblue">="<strong>max-width:100%;</strong>height:auto;"</span></span><span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                    </div><br>
+                    <div id="example_run">
+                        <a href="" target="_blank">Try it Yourself »</a>
+                    </div>
+                </div>
+                <br><br>
+                <hr>
+            </div>
+            <div id="para">
+                <h3>Show Different Images Depending on Browser Width</h3><br>
+                <p>The HTML <code class="w3-codespan">&lt;picture&gt;</code> element allows you to define different
+                    images for
+                    different browser window sizes.</p><br>
+                <p>Resize the browser window to see how the image below changes depending on the width:</p><br>
+                <picture>
+                    <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+                    <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+                    <source srcset="flowers.jpg">
+                    <img src="style/image/html_image.png" alt="html">
+                </picture>
+                <div id="example"><br>
+                    <h3>Example</h3><br>
+                    <div id="example_code">
+                        <span style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>picture<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span
+                                class="attributecolor" style="color:red"> srcset<span class="attributevaluecolor"
+                                    style="color:mediumblue">="img_smallflower.jpg"</span> media<span
+                                    class="attributevaluecolor" style="color:mediumblue">="(max-width:
+                                    600px)"</span></span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span
+                                class="attributecolor" style="color:red"> srcset<span class="attributevaluecolor"
+                                    style="color:mediumblue">="img_flowers.jpg"</span> media<span
+                                    class="attributevaluecolor" style="color:mediumblue">="(max-width:
+                                    1500px)"</span></span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span
+                                class="attributecolor" style="color:red"> srcset<span class="attributevaluecolor"
+                                    style="color:mediumblue">="flowers.jpg"</span></span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span
+                                class="attributecolor" style="color:red"> src<span class="attributevaluecolor"
+                                    style="color:mediumblue">="img_smallflower.jpg"</span>
+                                alt<span class="attributevaluecolor"
+                                    style="color:mediumblue">="Flowers"</span></span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/picture<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                    </div><br>
+                    <div id="example_run">
+                        <a href="" target="_blank">Try it Yourself »</a>
+                    </div>
+                </div> <br><br>
+                <hr>
+            </div>
+            <div id="para">
+                <h2>Responsive Text Size</h2> <br>
+                <p>The text size can be set with a "vw" unit, which means the "viewport width".</p><br>
+                <p>That way the text size will follow the size of the browser window:</p><br>
+                <div id="example">
+                    <h1 style="font-size:8vw;">Hello World</h1>
+                    <p style="font-size:2vw;">Resize the browser window to see how the text size scales.</p>
+                </div><br>
+                <div id="example">
+                    <h3>Example</h3><br>
+                    <div id="example_code">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red">
+                                style<span class="attributevaluecolor"
+                                    style="color:mediumblue">="<strong>font-size:10vw</strong>"</span></span><span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span>Hello World<span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>
+                    </div><br>
+                    <div id="example_run">
+                        <a href="" target="_blank">Try it
+                            Yourself »</a>
+                    </div>
+                </div><br><br>
+                <hr>
+            </div>
+            <div id="para">
+                <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide,
+                    1vw is
+                    0.5cm.</p><br><br>
+            </div>
+            <div id="button">
+                <div id="click"><a href="html_filepath.html"><--BACK</a></div>
+                <div id="click"><a href="html_forms.html">NEXT--></a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

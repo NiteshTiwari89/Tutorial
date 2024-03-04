@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variable Scope </title>
+    <link rel="stylesheet" href="js_style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>JavaScript Scope</h2><br>
+                <hr><br>
+                <p>
+                    JavaScript variable have 3 types of scope:
+                <ol style="margin-left: 20px;">
+                    <li>Block Scope</li>
+                    <li>Function Scope</li>
+                    <li>Global Scope</li>
+                </ol>
+                <br><br>
+                <b>Block Scope:-</b><br>
+                In <b>Block Scope</b> of JS, there is two keyword provide. <br> <br>
+                <p>Variables declared inside a { } block cannot be accessed from outside the block:</p>
+                <div id="example">
+                    <div id="example_code">
+                        { <br>
+                        let x = 2; <br>
+                        } <br>
+                        // x can not be used here
+                    </div>
+                </div><br>
+                <p>Variables declared with the var keyword can NOT have block scope.</p><br>
+                <p>Variables declared inside a { } block can be accessed from outside the block.</p><br>
+                <div id="example">
+                    <div id="example_code">
+                        { <br>
+                        var x = 2; <br>
+                        } <br>
+                        // x can be used here
+                    </div>
+                </div><br>
+                <b>Local Scope:-</b><br>
+                <p>Variables declared within a JavaScript function, are <b>LOCAL</b> to the function:</p><br>
+                <div id="example">
+                    <div id="example_code">
+                        // code here can NOT use carName <br>
+
+                        function myFunction() { <br>
+                        let carName = "Volvo"; <br>
+                        // code here CAN use carName <br>
+                         } <br>
+
+                        // code here can NOT use carName <br>
+                    </div>
+                </div><br>
+                <p style="background: rgb(247, 247, 65);">
+                    <b>Local</b> variables have <b>Function Scope.</b><br><br>
+                    They can only be accessed from within the function.
+                </p><br>
+                <b>Function Scope:-</b><br>
+                <p>JavaScript has function scope: Each function creates a new scope.</p><br>
+                <p>Variables defined inside a function are not accessible (visible) from outside the function.</p><br>
+                <p>Variables declared with var, let and const are quite similar when declared inside a function</p><br>
+                <b>For Ex.:-</b><br>
+                <div id="example">
+                    <div id="example_code">
+                        function myFunction() { <br>
+                            var carName = "Volvo";   // Function Scope <br>
+                          }
+                    </div>
+                </div><br>
+                <div id="example">
+                    <div id="example_code">
+                        function myFunction() { <br>
+                            let carName = "Volvo";   // Function Scope <br>
+                          }
+                    </div>
+                </div><br>
+                <div id="example">
+                    <div id="example_code">
+                        function myFunction() { <br>
+                            const carName = "Volvo";   // Function Scope <br>
+                          }
+                    </div>
+                </div><br>
+                <b>Global Scope:-</b><br>
+                <p>A variable declared outside a function, becomes GLOBAL</p><br>
+                <p>Variables declared Globally (outside any function) have Global Scope</p><br>
+                <p>Global variables can be accessed from anywhere in a JavaScript program.</p><br>
+                <b>For Ex:-</b><br>
+                <div id="example">
+                    <div id="example_code">
+                        var x = 2;   //Global Scope
+                    </div>
+                </div><br>
+                <div id="example">
+                    <div id="example_code">
+                        let x = 2;   //Global Scope
+                    </div>
+                </div><br>
+                <div id="example">
+                    <div id="example_code">
+                        const x = 2;   //Global Scope
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div id="button">
+                <div id="click"><a href="js_hoisting.html"><--Back</a></div>
+                <div id="click"><a href="">Next--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

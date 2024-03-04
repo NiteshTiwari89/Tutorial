@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#head{
+    background-color: blanchedalmond;
+    color:black;
+    width: 100%;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right:  2px solid;
+}
+#intro{
+    text-align: center;
+}
+#container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    border: 2px solid;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 30px;   
+}
+#button{
+    text-align: end;
+    margin-right: 10%;
+    justify-content: end;
+    text-decoration: underline;
+}

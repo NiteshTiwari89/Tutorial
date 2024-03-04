@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style/homestyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<div class="ll">
+    <h1><marquee>Welcome To HTML, CSS & JS Tutorial </marquee></h1> 
+    <!-- <div class="content">
+        <div class="content__container">
+          <p class="content__container__text">
+            Hello
+          </p>
+          
+          <ul class="content__container__list">
+            <li class="content__container__list__item">world !</li>
+            <li class="content__container__list__item">bob !</li>
+            <li class="content__container__list__item">users !</li>
+            <li class="content__container__list__item">everybody !</li>
+          </ul>
+        </div>
+      </div>
+       -->
+    <div class="home">
+        <a href="HTML_page.html"  data-aos="fade-left"><div id="html">
+           <!--HTML Page-->  
+        </div></a>
+        <a href="CSS_page.html" data-aos="fade-up"><div id="css">
+           <!--CSS Page --> 
+        </div></a>
+        <a href="JS_Homepage.html" data-aos="fade-right"><div id="js">
+            <!--JS Page --> 
+         </div></a>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                delay: 20,
+                duration: 1000
+            }
+        );
+    </script>
+</div>
+</body>
+</html>

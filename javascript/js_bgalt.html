@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Background</title>
+    <link rel="stylesheet" href="js_style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-fluid">
+            <div id="para">
+                <h2>JavaScript Program to Change the Color of Background</h2><br>
+                <hr><br>
+                <p>
+                    <b>To Change The Color of Background of this page we have to write the program as give
+                        below:
+                    </b><br><br><b>index.html:</b><br><br>
+                <div id="example">
+                    <div id="example_code">
+                        <code>&lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;
+                            &lt;div id=&quot;container&quot;&gt;<br>
+                          &nbsp; &lt;div id=&quot;container-fluid&quot;&gt;<br>
+                          &nbsp;&nbsp; &lt;div id=&quot;para&quot;&gt; <br>&nbsp;&nbsp; Content
+                               <br> &lt;/div&gt;
+                            <br>&lt;/div&gt;
+                    <br> &lt;/div&gt;<br>
+                    &lt;script&gt;<br>
+                        function myFunction() {
+                        document.getElementById(&quot;container&quot;).style.backgroundColor = &quot;#4B4453&quot;;<br>
+                        document.getElementById(&quot;para&quot;).style.backgroundColor =
+                        &quot;#D5CABD&quot;;<br>
+                        } <br>
+                        &lt;/script&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;</code>
+                    </div>
+                </div>
+                </p>
+                <br><br>
+                <button id="btn" onclick="myFunction()">Click to Change BG Color</button>
+                <br><br>
+                <h2 id="see"></h2>
+            </div>
+            <div id="button">
+                <!-- <div id="click"><a href="js_intro.html"><--Back</a></div> -->
+                <div id="click"><a href="">Next--></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function myFunction() {
+    document.getElementById("container").style.backgroundColor = "#4B4453";
+    document.getElementById("para").style.backgroundColor = "#D5CABD";
+    document.getElementById("see").innerHTML = "You See!";
+    document.getElementById("btn").style.backgroundColor = "#D5CABD";   
+  }
+</script>
+</html>
