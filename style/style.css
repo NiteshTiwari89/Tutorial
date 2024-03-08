@@ -3,6 +3,10 @@
     padding: 0;
     /* background-color: rgb(231, 246, 255); */
     /* background-color: #F6B17A; */
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: linear-gradient(#f4cf5c 0.8px, transparent 0.8px), linear-gradient(to right, #f4cf5c 0.8px, #e5e5f7 0.8px);
+    background-size: 16px 16px;
 }
 
 h1 {
@@ -19,10 +23,10 @@ h1 {
     justify-content: center;
     align-items: center;
     
-    background-color: #e5e5f7;
+    /* background-color: #e5e5f7;
     opacity: 1;
     background-image: linear-gradient(#f4cf5c 0.8px, transparent 0.8px), linear-gradient(to right, #f4cf5c 0.8px, #e5e5f7 0.8px);
-    background-size: 16px 16px;
+    background-size: 16px 16px; */
 }
 
 #box1,
