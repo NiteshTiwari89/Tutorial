@@ -68,7 +68,7 @@ table,tr,td{
     /* background-color: #F6B17A; */
     background-color: #e5e5f7;
     opacity: 1;
-    background-image: linear-gradient(#4aa6ff 0.8px, transparent 0.8px), linear-gradient(to right, #4aa6ff 0.8px, #e5e5f7 0.8px);
+/*     background-image: linear-gradient(#4aa6ff 0.8px, transparent 0.8px), linear-gradient(to right, #4aa6ff 0.8px, #e5e5f7 0.8px); */
     background-size: 16px 16px;
 }
 
@@ -80,9 +80,9 @@ h1 {
 #container {
     /* background-color: #7fb0fb; */
     /* background-color: #e5e5f7;
-    opacity: 1;
+    opacity: 1; */
     background-image: linear-gradient(#4aa6ff 0.8px, transparent 0.8px), linear-gradient(to right, #4aa6ff 0.8px, #e5e5f7 0.8px);
-    background-size: 16px 16px; */
+    background-size: 16px 16px;
     width: 100%;
     height: auto;
     display: flex;
